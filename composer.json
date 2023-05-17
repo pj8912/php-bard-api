@@ -3,7 +3,7 @@
     "description": "A PHP package for interacting with the Bard API",
     "type": "library",
     "license": "MIT",
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
             "Pj8912\\PhpBardApi\\": "src/"
