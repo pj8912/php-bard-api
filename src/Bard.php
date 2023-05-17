@@ -106,11 +106,3 @@ class Bard {
         return $bard_answer;
     }
 }
-// $_ENV['_BARD_API_KEY'] = "WQidyv0Pj35SZheUvBV4P3wrfK6cN0HiEB5ajvu5vnRY4gaBeVrxr7e7cUvWW5rXI7jbqQ.";
-// // putenv("_BARD_API_KEY=WQidyv0Pj35SZheUvBV4P3wrfK6cN0HiEB5ajvu5vnRY4gaBeVrxr7e7cUvWW5rXI7jbqQ.");
-// $bard = new Bard();
-// $input_text = "Hello, Bard!";  // Input text for the conversation
-// $result = $bard->get_answer($input_text);  // Get the response from Bard
-// // Access the result data
-// $content = $result["content"];
-// print($content);

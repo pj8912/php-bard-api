@@ -10,7 +10,7 @@
 
 ## Install
  ```
- composer require pj8912/php-bard-api
+ composer require pj8912/php-bard-api:dev-main
  ```
 
 ## Get Your Key
