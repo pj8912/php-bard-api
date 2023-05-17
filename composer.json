@@ -1,0 +1,19 @@
+{
+    "name": "pj8912/php-bard-api",
+    "description": "A PHP package for interacting with the Bard API",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Pj8912\\PhpBardApi\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "pj8912",
+            "email": "jpintofun2b@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",
+    "require": {}
+}
