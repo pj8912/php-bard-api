@@ -15,6 +15,7 @@
         }
     ],
     "require": {
-        "php": "^8.1"
+        "php": "^8.1",
+        "pj8912/php-bard-api": "dev-main"
     }
 }
