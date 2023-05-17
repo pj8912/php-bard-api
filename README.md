@@ -18,15 +18,15 @@ Follow the [gif](https://github.com/dsdanielpark/Bard-API/blob/main/assets/bard_
 
  ## Use
  ```php
-<?php
- $_ENV['_BARD_API_KEY'] = "Your Key";
+require_once 'vendor/autoload.php';
+use Pj8912\PhpBardApi\Bard;
+$_ENV['_BARD_API_KEY'] = "Your Key";
 $bard = new Bard();
 $input_text = "Hello, Bard!";  // Input text for the conversation
 $result = $bard->get_answer($input_text);  // Get the response from Bard
 // Access the result data
 $content = $result["content"];
 print($content);
-?>
 ```
 ## License
 This project is licensed under the [MIT](https://opensource.org/license/mit/)  License
