@@ -15,7 +15,5 @@
             "email": "jpintofun2b@gmail.com"
         }
     ],
-    "require": {
-        "php": "^8.1"
-    }
+    "require": {}
 }
