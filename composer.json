@@ -14,7 +14,7 @@
             "email": "jpintofun2b@gmail.com"
         }
     ],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.4"
     }
