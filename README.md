@@ -25,6 +25,12 @@ $bard = new Bard();
 $input_text = "Hello, Bard!";  // Input text for the conversation
 $result = $bard->get_answer($input_text);  // Get the response from Bard
 // Access the result data
+$conversation_id = $result["conversation_id"];
+$response_id = $result["response_id"];
+$factualityQueries = $result["factualityQueries"];
+$textQuery = $result["textQuery"];
+$choices = $result["choices"];
+// reply
 $content = $result["content"];
 print($content);
 ```
