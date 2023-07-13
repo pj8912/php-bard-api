@@ -11,6 +11,7 @@ class Bard {
     private $choice_id;
     private $reqid;
     private $SNlM0e;
+    private $cfb2h;
 
     public function __construct($timeout = 6, $proxies = null, $session = null) {
         $this->proxies = $proxies;
@@ -31,7 +32,7 @@ class Bard {
         if ($session === null) {
             $this->session = curl_init();
             curl_setopt($this->session, CURLOPT_HTTPHEADER, $headers);
-            curl_setopt($this->session, CURLOPT_COOKIE, "__Secure-1PSID=" . $_ENV["_BARD_API_KEY"]);
+            curl_setopt($this->session, CURLOPT_COOKIE, "__Secure-1PSID=" . $_ENV["_BARD_API_KEY_1PSID"]."__Secure-1PSIDTS=" . $_ENV["_BARD_API_KEY_1PSIDTS"]);
             curl_setopt($this->session, CURLOPT_RETURNTRANSFER, true);
         } else {
             $this->session = $session;
@@ -54,12 +55,14 @@ class Bard {
             throw new \Exception("Response Status: " . curl_getinfo($this->session, CURLINFO_HTTP_CODE));
         }
         preg_match('/"SNlM0e":"(.*?)"/', $resp, $matches);
+        preg_match('/"cfb2h":"(.*?)"/', $resp, $matchesCfb2h);
+        $this->cfb2h = $matchesCfb2h[1];
         return $matches[1];
     }
 
     public function get_answer($input_text) {
         $params = [
-            "bl" => "boq_assistant-bard-web-server_20230419.00_p1",
+            "bl" => $this->cfb2h,
             "_reqid" => (string) $this->reqid,
             "rt" => "c",
         ];
