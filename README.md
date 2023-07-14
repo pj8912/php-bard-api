@@ -13,26 +13,27 @@
  composer require pj8912/php-bard-api
  ```
 
-## Get Your Key
-Follow the [gif](https://github.com/dsdanielpark/Bard-API/blob/main/assets/bard_api.gif) to get your key
+## Get Your Keys
+- Open [bard.google.com](https://bard.google.com/)
+- Open developer tools, click `Application` tab
+- In Application under the `Storage` you will find `cookies` dropdown
+- Under cookies click on `https://bard.google.com` which will show you all the cookies being used as `Name` and `Value`
+- Copy the values the cookies`__Secure-1PSID` and `__Secure-1PSIDTS`
 
- ## Use
+ ## Run
  ```php
 require_once 'vendor/autoload.php';
 use Pj8912\PhpBardApi\Bard;
-$_ENV['_BARD_API_KEY'] = "Your Key";
+//two keys are required which are two cookies values
+$_ENV['BARD_API_KEY_X'] = " value of cookie '__Secure-1PSID' ";
+$_ENV['BARD_API_KEY_Y'] = " value of cookie '__Secure-1PSIDTS' "
 $bard = new Bard();
 $input_text = "Hello, Bard!";  // Input text for the conversation
 $result = $bard->get_answer($input_text);  // Get the response from Bard
-// Access the result data
-$conversation_id = $result["conversation_id"];
-$response_id = $result["response_id"];
-$factualityQueries = $result["factualityQueries"];
-$textQuery = $result["textQuery"];
-$choices = $result["choices"];
-// reply
-$content = $result["content"];
-print($content);
+
+// bard reply
+print($result['choices'][0]['content'][0]);
+
 ```
 ## License
 This project is licensed under the [MIT](https://opensource.org/license/mit/)  License
