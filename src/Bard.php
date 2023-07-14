@@ -32,7 +32,7 @@ class Bard {
         if ($session === null) {
             $this->session = curl_init();
             curl_setopt($this->session, CURLOPT_HTTPHEADER, $headers);
-            curl_setopt($this->session, CURLOPT_COOKIE, "__Secure-1PSID=" . $_ENV["_BARD_API_KEY_1PSID"]."__Secure-1PSIDTS=" . $_ENV["_BARD_API_KEY_1PSIDTS"]);
+            curl_setopt($this->session, CURLOPT_COOKIE, "__Secure-1PSID=" . $_ENV["_BARD_API_KEY_1PSID"]."; __Secure-1PSIDTS=" . $_ENV["_BARD_API_KEY_1PSIDTS"]);
             curl_setopt($this->session, CURLOPT_RETURNTRANSFER, true);
         } else {
             $this->session = $session;
