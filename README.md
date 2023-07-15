@@ -20,6 +20,8 @@
 - Under cookies click on `https://bard.google.com` which will show you all the cookies being used as `Name` and `Value`
 - Copy the values the cookies`__Secure-1PSID` and `__Secure-1PSIDTS`
 
+> **the value of `__Secure-1PSIDTS` will have to be changed frequently (Google changes it)**
+
  ## Run
  ```php
 require_once 'vendor/autoload.php';
