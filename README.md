@@ -50,4 +50,3 @@ This project is licensed under the [MIT](https://opensource.org/license/mit/)  L
 
 ### Important Notice
 The user assumes all legal responsibilities associated with using the BardAPI package. This PHP package merely facilitates easy access to Google Bard for developers. Users are solely responsible for managing data and using the package appropriately. For further information, please consult the Google Bard Official Document.
-Coffee" style="height: 60px !important;width: 217px !important;" ></a></p>
