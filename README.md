@@ -1,12 +1,24 @@
 # php-bard-api
 
+
+***❗This repo is archived❗***
+
+
+
+<h3>Use Official Gemini API</h3>
+
+```
+https://ai.google.dev/
+```
+
+
+----
 <p align="left">
  <a><img src="https://img.shields.io/badge/PHP-8.1-indigo" alt="PHP"></a>
 <a><img alt="composer bard package" src="https://img.shields.io/badge/composer-BardAPI-default"></a>
 <a><img alt="bard api"  src="https://img.shields.io/badge/BardAPI-default"></a>
 <a><img alt="composer version"  src="https://img.shields.io/badge/composer-2.2.6-orange"></a>
 </p>
-<a href="https://www.buymeacoffee.com/gjohnpinto" target="_blank" align="center"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 100px !important;width: 250px !important;" ></a>
 <hr>
 
 > A package that returns Response of Google Bard through API
